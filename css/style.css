@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Handlee', cursive;
+	background-color: #EBF7EB;
+}
+
+/*** EN TETE ***/
+header {
+	background-color: #006573;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #EBF7EB;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+/*** BAS DE PAGE ***/
+footer {
+	background-color: #006573;
+	text-align: center;
+	margin-top: 10px;
+	color: #EBF7EB;
+}
+
+/*** AJOUT DE TACHES ***/
+#formulaire {
+	display: inline-block;
+	width: 49%;
+	height: 100%;
+	vertical-align: top;
+}
+
+h4 {
+	font-size: 25px;
+	margin-left: 20px;
+}
+
+fieldset {
+	border: none;
+	font-size: 20px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+input,
+textarea {
+	border: 1px solid #008B8D;
+	border-radius: 10px;
+	color: #005572;
+	display: block;
+	margin: 5px 0 27px 0;
+	padding: 5px 8px;
+	width: 70%;
+	font-family: 'Handlee', cursive;
+	font-size: 15px;
+}
+
+textarea {
+	height: 80px;
+}
+
+input[type="submit"] {
+	border: none;
+	background: #008B8D;
+	padding: 11px 30px;
+	font-size: 14px;
+	color: #EBF7EB;
+}
+input[type="submit"]:hover {
+	background: #006573;
+}
+
+input[type="range"] {
+	-webkit-appearance: none;
+	width: 70%;
+    position: relative;
+}
+
+input[type="range"]:after,
+input[type="range"]:before {
+    position: absolute;
+    top: 1em;
+    color: #005572;
+}
+
+input[type="range"]:before {
+    left:0;
+    top: 20px;
+    content: attr(min);
+}
+
+input[type="range"]:after {
+    right: 0;
+    top: 20px;
+    content: attr(max);
+}
+
+input[type=range]:focus {
+	outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	width: 70%;
+	height: 5px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 1px 1px 1px #006573;
+	background: #008B8D;
+	border-radius: 1px;
+	border: 1px solid #006573;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	box-shadow: 1px 1px 1px #006573;
+	border: 1px solid #006573;
+	height: 21px;
+	width: 21px;
+	border-radius: 25px;
+	background: #81BEAA;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -9px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {	
+	background: #008B8D;
+}
+
+input[type=range]::-moz-range-track {
+	width: 70%;
+	height: 5px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 1px 1px 1px #006573;
+	background: #008B8D;
+	border-radius: 1px;
+	border: 1px solid #006573;
+}
+
+input[type=range]::-moz-range-thumb {
+	box-shadow: 1px 1px 1px #006573;
+	border: 1px solid #006573;
+	height: 21px;
+	width: 21px;
+	border-radius: 25px;
+	background: #81BEAA;
+	cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+	width: 70%;
+	height: 5px;
+	cursor: pointer;
+	animate: 0.2s;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+	background: #008B8D;
+	border: 1px solid #006573;
+	border-radius: 2px;
+	box-shadow: 1px 1px 1px #006573;
+}
+
+input[type=range]::-ms-fill-upper {
+	background: #008B8D;
+	border: 1px solid #006573;
+	border-radius: 2px;
+	box-shadow: 1px 1px 1px #006573;
+}
+
+input[type=range]::-ms-thumb {
+	box-shadow: 1px 1px 1px #006573;
+	border: 1px solid #006573;
+	height: 21px;
+	width: 21px;
+	border-radius: 25px;
+	background: #81BEAA;
+	cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+	background: #008B8D;
+}
+input[type=range]:focus::-ms-fill-upper {
+	background: #008B8D;
+}
+
+
+/*** CAHIER ET LISTE DE TACHES ***/
+#cahier {
+	display: inline-block;
+	width: 49%;
+	height: 1219px;
+	background-image: url("../images/fond.jpg");
+	vertical-align: top;
+}
+
+#cahier ul {
+	margin: 100px 0 0 80px;
+}
+
+li {
+	font-size: 21px;
+	list-style: none;
+	margin-bottom: 30px;
+	line-height: 30px;
+}
+
+li:before {
+    content: "→ ";
+}
+
+.croix,
+.moins,
+.plus {
+	width: 20px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.titre {
+	font-size: 22px;
+	font-weight: bold;
+}

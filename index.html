@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Ma "To-Do List"</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/script.js"></script>
+		
+		<link rel="stylesheet"  href="css/jquery-ui.css" type="text/css">
+		<link rel="stylesheet"  href="css/style.css" type="text/css">
+	</head>
+	<body>
+		<header>
+			<h1>Ma "To-Do List"</h1>
+			<h2>Exercice web - Semestre 1 / IMAC 1</h2>
+		</header>
+		
+		<!-- Formulaire d'ajout de tâches -->
+		<section id="formulaire">
+			<form>
+				<h4>Ajout d'une nouvelle tâche</h4>
+				<br />
+				<fieldset>
+					<label>
+						Nom
+						<input type="text" name="nomTache" id="nomTache" placeholder="Entrez un nom">
+					</label>
+					<label>
+						Date de fin
+						<input type="text" name="dateTache" id="dateTache" placeholder="Entrez une date de fin">
+					</label>
+					<label>
+						Description
+						<textarea name="descriptionTache" id="descriptionTache" placeholder="Entrez une description"></textarea>
+					</label>
+					<label>
+						Avancement
+						<input type="range" value="50" max="100" min="0" step="10" id="pourcentageTache">
+					</label>
+					<input type="submit" value="Ajouter" id="ajout">
+				</fieldset>
+			</form>
+		</section>
+
+		<!-- Liste des tâches -->
+		<section id="cahier">
+			<ul id="listeTaches">
+			</ul>
+		</section>
+
+		<footer>
+			<h3>Copyright © Coralie Goldbaum 2015</h3>
+			<p>Projet web en première année d'école ingénieur IMAC. <br />
+				Réalisé en jQuery, avec l'utilisation de JSON et de LocalStorage.
+			</p>
+		</footer>
+		
+	</body>
+</html>
